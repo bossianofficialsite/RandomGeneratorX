@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+    <script src="https://kit.fontawesome.com/60b0971689.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        ul li a [class="icon-3"] {
+            color: #fff;
+        }
+        ul li a [class="title-3"] {
+            color: #fff;
+        }
+        #result-reflect-decimal {
+            position: absolute;
+            top: 53%;
+            color: rgba(0,0,0,.2);
+            transform: scale(1, .6) rotateZ(180deg) rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="label">Random Generator<span>X</span></div>
+    </header>
+    <div class="wrap">
+        <section id="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="icon-1"><i class="fas fa-home"></i></span>
+                        <span class="title-1">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="whole.html">
+                        <span class="icon-2"><i class="fas fa-list-ol"></i></span>
+                        <span class="title-2">Whole number</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="decimal.html">
+                        <span class="icon-3"><i class="fas fa-sort-amount-down"></i></span>
+                        <span class="title-3">Decimal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="even.html">
+                        <span class="icon-4"><i class="fas fa-dice-two"></i></span>
+                        <span class="title">Even number</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="odd.html">
+                        <span class="icon-5"><i class="fas fa-dice-three"></i></i></span>
+                        <span class="title">Odd number</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="container">
+            <div class="flex-cont">
+                <div>
+                    <div class="print-out"><p id="result-decimal">0.0</p><p id="result-reflect-decimal">0.0</p></div>
+                </div>
+                <div>
+                    <div>
+                        <input type="text" id="min-decimal" placeholder="MIN">
+                    </div>
+                    <div>
+                        <input type="text" id="max-decimal" placeholder="MAX">
+                    </div>
+                    <div>
+                        <button type="button" id="myRandom" onclick="decimal()">Generate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="toggle"></div>
+<script src="script.js"></script> 
+</body>
+</html>
